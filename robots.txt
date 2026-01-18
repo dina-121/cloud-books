@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cgi-bin/
+Crawl-delay: 10
+
+Sitemap: https://cloudbooksae.com/sitemap.xml

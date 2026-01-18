@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cloud Books UAE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="canonical" href="https://cloudbooksae.com/about.html" />
+   <style>
+
+         
+
+        /* General Styling and Color Palette (Professional Blue & White) */
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --primary-light: #3b82f6;
+            --secondary: #0f172a;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --text: #334155;
+            --text-light: #64748b;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Arial', sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            transition: background-color 0.5s;
+            scroll-behavior: smooth;
+        }
+        
+        /* Arabic Content Adjustments */
+        .lang-ar-content {
+            font-family: 'Cairo', 'Poppins', sans-serif;
+        }
+        
+        /* Keyframes for Logo Movement */
+        @keyframes slideInFromTop {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .logo-animate {
+            animation: slideInFromTop 0.8s ease-out forwards;
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        /* Header Style: Clean, Floating, and Minimal */
+        #header {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid #e2e8f0;
+            height: 80px; 
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Header shrink on scroll */
+        #header.scrolled {
+            height: 60px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        #header.scrolled .nav-link,
+        #header.scrolled .logo-animate {
+            transform: scale(0.9);
+        }
+        
+        #header.scrolled .logo-image {
+            width: 32px;
+            height: 32px;
+        }
+        
+        #header.scrolled .get-consultation-btn {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 0.8rem;
+        }
+        
+        #header.scrolled #logo-text {
+            font-size: 1.1rem;
+        }
+        
+        #header.scrolled #logo-subtext {
+            font-size: 0.6rem;
+        }
+
+        /* Navigation Links Hover Effect */
+        .nav-link:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        /* Card Hover Effect */
+        .card-hover {
+            background-color: white;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(30, 64, 175, 0.15); 
+            border-color: var(--primary-light);
+        }
+        
+        /* Mission/Vision Panel Design */
+        .vision-mission-panel {
+            background-color: white;
+            border-left: 5px solid;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .vision-mission-panel:hover {
+            background-color: #f8fafc;
+        }
+        
+        .mission-border { border-left-color: var(--primary); }
+        .vision-border { border-left-color: var(--accent); }
+
+        /* Active Language Button Style */
+        .lang-active {
+            background-color: var(--primary);
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Placeholder for hidden content */
+        .lang-ar-content { display: none; }
+        
+        /* Mobile Menu Improvements */
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* Contact Info Section */
+        .contact-info-item {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-item:hover {
+            transform: translateX(5px);
+            color: var(--primary);
+        }
+        
+        /* Section Backgrounds */
+        .section-light {
+            background-color: var(--light);
+        }
+        
+        .section-dark {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .section-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+        }
+        
+        /* Stats Counter Animation */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        /* Mobile Responsive Improvements */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 100px;
+                padding-bottom: 60px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            
+            .stats-grid .card-hover {
+                padding: 15px 10px;
+            }
+            
+            .stats-grid .card-hover p:first-child {
+                font-size: 1.75rem;
+            }
+            
+            .why-us-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form-container {
+                padding: 20px 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+      /* إضافة هذا CSS فقط في قسم الـ style */
+#social-icons-container {
+    position: fixed;
+    left: 6px;
+    bottom: 6px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.social-icon-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* تأثير الـ hover */
+.social-icon-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* التلميحات */
+.social-icon-item span {
+    position: absolute;
+    left: 55px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.social-icon-item:hover span {
+    opacity: 1;
+    left: 50px;
+}
+
+/* إخفاء الأيقونات */
+.hide-icons .social-icon-item:not(#toggle-icons-btn) {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* زر التبديل */
+#toggle-icons-btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+    border: none;
+}
+
+/* دعم اللغة العربية */
+body.rtl #social-icons-container {
+    left: auto;
+    right: 6px;
+}
+
+body.rtl .social-icon-item span {
+    left: auto;
+    right: 55px;
+}
+
+body.rtl .social-icon-item:hover span {
+    left: auto;
+    right: 50px;
+}
+
+/* تحسينات للجوال */
+@media (max-width: 768px) {
+    #social-icons-container {
+        left: 4px;
+        bottom: 4px;
+        gap: 10px;
+    }
+    
+    .social-icon-item {
+        width: 44px;
+        height: 44px;
+    }
+    
+    body.rtl #social-icons-container {
+        left: auto;
+        right: 4px;
+    }
+}
+
+/* إخفاء التلميحات في الموبايل */
+@media (max-width: 480px) {
+    .social-icon-item span {
+        display: none;
+    }
+}  
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-lg">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-16">
+                
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-3 overflow-hidden">
+<img src="images/logo1_compressed.webp" alt="CloudBooks Logo" 
+class="w-12 h-12 object-contain transition-transform duration-300 logo-image">
+                    <div class="flex flex-col">
+                        <div id="logo-text" class="text-gray-900 text-xl font-extrabold tracking-tight logo-animate transition-all duration-300" style="animation-delay: 0.1s;">
+                            <span class="bg-gradient-to-r from-blue-700 to-indigo-800 bg-clip-text text-transparent">Cloud</span>
+                            <span class="text-gray-700">Books</span>
+                        </div>
+                        <div id="logo-subtext" class="text-gray-500 text-xs tracking-wider uppercase logo-animate transition-all duration-300" style="animation-delay: 0.2s;">
+                            Tax Agent
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-6">
+                    
+                    <!-- Contact Information -->
+                    <a href="tel:+971502343297" class="flex items-center space-x-1 text-xs text-gray-600 hover:text-indigo-600 transition-colors border-r pr-6">
+                        <i data-lucide="phone" class="w-3.5 h-3.5 text-indigo-500"></i>
+                        <span class="font-medium">+971 50 234 3297</span>
+                    </a>
+                    <a href="mailto:info@cloudbooksae.com" class="flex items-center space-x-1 text-xs text-gray-600 hover:text-indigo-600 transition-colors border-r pr-6">
+                        <i data-lucide="mail" class="w-3.5 h-3.5 text-indigo-500"></i>
+                        <span class="font-medium">info@cloudbooksae.com</span>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <a href="index.html#home" class="nav-link text-gray-600 hover:text-indigo-600 font-medium py-1 transition-colors duration-300">Home</a>
+                    <a href="index.html#services" class="nav-link text-gray-600 hover:text-indigo-600 font-medium py-1 transition-colors duration-300">Services</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-indigo-600 font-medium py-1 transition-colors duration-300">About</a>
+                    <a href="#why" class="nav-link text-gray-600 hover:text-indigo-600 font-medium py-1 transition-colors duration-300">Why Us</a>
+                    <a href="contact.html" class="nav-link bg-indigo-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-indigo-700 transition-all duration-300 transform hover:-translate-y-0.5 font-bold tracking-wide text-sm">
+                        Get a Quote
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu and Language Button -->
+                <div class="flex items-center space-x-4 lg:hidden">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center bg-gray-100/50 rounded-full p-0.5 border border-gray-300">
+                        <button onclick="toggleLanguage('en')" id="lang-btn-en" class="px-3 py-1 text-sm font-medium rounded-full lang-active text-indigo-600 transition-colors">
+                            EN
+                        </button>
+                        <button onclick="toggleLanguage('ar')" id="lang-btn-ar" class="px-3 py-1 text-sm font-medium rounded-full text-gray-600 hover:text-indigo-700 transition-colors">
+                            عربي
+                        </button>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-indigo-600 transition-colors p-1 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </header> 
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-64 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[100]">
+        <div class="mobile-menu-content p-6 h-full flex flex-col">
+            <button class="mobile-menu-close absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors" onclick="closeMobileMenu()">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <nav class="space-y-1 mb-6 mt-10 flex-grow">
+                <a href="index.html#home" onclick="closeMobileMenu()" class="mobile-nav-link block text-lg font-bold text-gray-800 hover:text-indigo-600 py-3 px-2 transition-colors duration-200 border-b border-gray-200">Home</a>
+                <a href="index.html#services" onclick="closeMobileMenu()" class="mobile-nav-link block text-lg font-medium text-gray-600 hover:text-indigo-600 py-3 px-2 transition-colors duration-200 border-b border-gray-200">Services</a>
+                <a href="about.html" onclick="closeMobileMenu()" class="mobile-nav-link block text-lg font-medium text-gray-600 hover:text-indigo-600 py-3 px-2 transition-colors duration-200 border-b border-gray-200">About</a>
+                <a href="#why" onclick="closeMobileMenu()" class="mobile-nav-link block text-lg font-medium text-gray-600 hover:text-indigo-600 py-3 px-2 transition-colors duration-200 border-b border-gray-200">Why Us</a>
+                <a href="contact.html" onclick="closeMobileMenu()" class="mobile-nav-link block text-lg font-medium text-gray-600 hover:text-indigo-600 py-3 px-2 transition-colors duration-200">Contact</a>
+            </nav>
+            
+            <div class="pt-6 border-t border-gray-200 space-y-3 mb-6">
+                <h4 class="text-sm font-semibold text-indigo-600 mb-2">Get In Touch</h4>
+                <a href="tel:+971502343297" class="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm">
+                    <i data-lucide="phone" class="w-4 h-4 mr-3 text-indigo-500"></i>
+                    <span>+971 50 234 3297</span>
+                </a>
+                <a href="mailto:info@cloudbooksae.com" class="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm">
+                    <i data-lucide="mail" class="w-4 h-4 mr-3 text-indigo-500"></i>
+                    <span>info@cloudbooksae.com</span>
+                </a>
+            </div>
+            
+            <div class="flex space-x-3 pt-4 border-t border-gray-200 mb-6">
+                <a href="https://www.facebook.com/share/1CcbFJNEVM/" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-indigo-600 transition-colors">
+                    <i data-lucide="facebook" class="w-4 h-4 text-gray-600"></i>
+                </a>
+                <a href="https://www.instagram.com/cloudbooks.accounting_taxagent?igsh=cnhvenB4a21vYmht" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-indigo-600 transition-colors">
+                    <i data-lucide="instagram" class="w-4 h-4 text-gray-600"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/the-accountantfirm/" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-indigo-600 transition-colors">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-gray-600"></i>
+                </a>
+            </div>
+            
+            <div class="space-y-4 pt-4 border-t border-gray-200">
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-600 text-sm">Theme</span>
+                    <button id="mobile-theme-toggle" class="theme-toggle flex items-center space-x-2 text-gray-800 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
+                        <i data-lucide="sun" class="w-5 h-5 text-yellow-500"></i>
+                    </button>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                    <span class="text-gray-600 text-sm">Language</span>
+                    <div class="language-switcher flex space-x-2 bg-gray-100 p-1 rounded-md">
+                        <button onclick="setLanguage('en')" id="mobile-lang-en" class="lang-btn text-xs px-3 py-1 rounded-sm bg-indigo-600 text-white font-bold transition-colors">EN</button>
+                        <button onclick="setLanguage('ar')" id="mobile-lang-ar" class="lang-btn text-xs px-3 py-1 rounded-sm text-gray-600 hover:bg-gray-200 transition-colors">AR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative pt-24 pb-16 bg-gradient-to-br from-indigo-900 to-blue-800 overflow-hidden border-b border-blue-700 hero-section section-primary">
+            <div class="container mx-auto px-4 lg:px-8 text-center relative z-10">
+                <div class="lang-en-content fade-in-up">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
+<div class="animate-bounce">
+    👋 Meet <span class="text-black">Cloud Books</span>
+</div>
+                        <p class="text-lg md:text-xl text-blue-100 max-w-4xl mx-auto mb-8">
+                        Your <strong>Certified Tax Agent</strong> and Trusted Accounting Partner in the UAE.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-8">
+                        <div class="flex items-center text-blue-100">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-300 mr-2"></i>
+                            <span>FTA Registered Tax Agent</span>
+                        </div>
+                        <div class="flex items-center text-blue-100">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-300 mr-2"></i>
+                            <span>10+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center text-blue-100">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-300 mr-2"></i>
+                            <span>500+ Satisfied Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang-ar-content fade-in-up">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
+                        👋 مرحبًا بكم في <span class="text-yellow-300">Cloud Books</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-blue-100 max-w-4xl mx-auto mb-8">
+                        وكيلكم الضريبي المعتمد وشريككم الموثوق في خدمات المحاسبة والضرائب داخل دولة الإمارات العربية المتحدة.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mt-8" dir="rtl">
+                        <div class="flex items-center text-blue-100">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-300 ml-2"></i>
+                            <span>وكيل ضريبي مسجل لدى الهيئة الاتحادية للضرائب</span>
+                        </div>
+                        <div class="flex items-center text-blue-100">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-300 ml-2"></i>
+                            <span>أكثر من 10 سنوات خبرة</span>
+                        </div>
+                        <div class="flex items-center text-blue-100">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-300 ml-2"></i>
+                            <span>أكثر من 500 عميل راضٍ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Content Section -->
+        <section class="py-16 md:py-20 section-light">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <div class="lang-en-content fade-in-up">
+                            <span class="text-sm font-semibold text-blue-600 uppercase tracking-widest block mb-3">Our Story</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+                                Committed to Your Financial Clarity and Compliance in the UAE.
+                            </h2>
+                            <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                                Welcome to <strong class="text-blue-700">Cloud Books</strong>, your reliable partner for accounting and tax services within the United Arab Emirates. We are a team of expert specialists dedicated to providing precise financial solutions that help businesses grow and achieve full compliance with the country's tax and financial regulations.
+                            </p>
+                            <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                                With years of experience in accounting, VAT, Corporate Tax, internal auditing, and business setup, we fully understand the challenges facing companies in the Emirati market. We are committed to providing smart, efficient solutions to ease your journey towards success.
+                            </p>
+                        </div>
+                        <div class="lang-ar-content fade-in-up" dir="rtl">
+                            <span class="text-sm font-semibold text-blue-600 uppercase tracking-widest block mb-3">قصتنا</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+                                ملتزمون بوضوحكم المالي وامتثالكم القانوني في الإمارات.
+                            </h2>
+                            <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                                مرحبًا بكم في <strong class="text-blue-700">Cloud Books</strong>، شريككم الموثوق في خدمات المحاسبة والضرائب داخل دولة الإمارات العربية المتحدة. نحن فريق من الخبراء المتخصصين في تقديم حلول مالية دقيقة تساعد الشركات على النمو وتحقيق الامتثال الكامل للأنظمة الضريبية والمالية في الدولة.
+                            </p>
+                            <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                                بخبرة تمتد لسنوات في مجالات المحاسبة، وضريبة القيمة المضافة، والضريبة على الشركات، والتدقيق الداخلي، وتأسيس الأعمال، نلتزم بتقديم حلول ذكية وفعالة لتسهيل رحلتكم نحو النجاح.
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="p-6 rounded-xl shadow-lg vision-mission-panel mission-border fade-in-up">
+                                <div class="lang-en-content flex items-start">
+                                    <i data-lucide="rocket" class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Mission</h3>
+                                        <p class="text-gray-600">To deliver high-quality financial and accounting services that contribute to our clients' business development and ensure complete regulatory compliance.</p>
+                                    </div>
+                                </div>
+                                <div class="lang-ar-content flex items-start" dir="rtl">
+                                    <i data-lucide="rocket" class="w-8 h-8 text-blue-600 ml-4 flex-shrink-0 mt-1"></i>
+                                    <div class="text-right">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">رسالتنا</h3>
+                                        <p class="text-gray-600">تقديم خدمات مالية ومحاسبية عالية الجودة تُسهم في تطوير أعمال عملائنا وتحقيق الامتثال الكامل للأنظمة.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 rounded-xl shadow-lg vision-mission-panel vision-border fade-in-up">
+                                <div class="lang-en-content flex items-start">
+                                    <i data-lucide="compass" class="w-8 h-8 text-amber-500 mr-4 flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Vision</h3>
+                                        <p class="text-gray-600">To be the first choice for companies seeking accounting and tax expertise in the UAE, recognized for our integrity, innovation, and exceptional service delivery.</p>
+                                    </div>
+                                </div>
+                                <div class="lang-ar-content flex items-start" dir="rtl">
+                                    <i data-lucide="compass" class="w-8 h-8 text-amber-500 ml-4 flex-shrink-0 mt-1"></i>
+                                    <div class="text-right">
+                                        <h3 class="text-2xl font-bold text-gray-800 mb-2">رؤيتنا</h3>
+                                        <p class="text-gray-600">أن نكون الخيار الأول للشركات في مجال المحاسبة والضرائب في الإمارات، معترفًا بنا لنزاهتنا وابتكارنا وتقديم خدمات استثنائية.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                         <div class="p-4 bg-white rounded-2xl shadow-xl mb-8 transform hover:scale-[1.02] transition duration-500 ease-in-out border border-gray-200 fade-in-up">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4 text-center border-b border-gray-200 pb-3">
+                                <span class="lang-en-content">Our Official Accreditations</span>
+                                <span class="lang-ar-content" dir="rtl">اعتماداتنا الرسمية</span>
+                            </h3>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="relative group">
+                                    <img src="images/ce.jpg" alt="Accreditation Certificate 2" class="w-full h-auto object-cover rounded-xl shadow-lg border border-gray-300">
+                                </div>
+                                <div class="relative group">
+                                    <img src="images/cee.png" alt="Accreditation Certificate 1" class="w-full h-auto object-cover rounded-xl shadow-lg border border-gray-300">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="mt-10 fade-in-up">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-5 text-center">
+                                <span class="lang-en-content">Achievements in Numbers 📈</span>
+                                <span class="lang-ar-content" dir="rtl">إنجازاتنا بالأرقام 📈</span>
+                            </h3>
+                            <div class="grid grid-cols-2 gap-4 stats-grid">
+                                <div class="card-hover p-4 rounded-xl text-center">
+                                    <i data-lucide="users" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+                                    <p class="text-4xl font-extrabold text-gray-800 mb-1 counter" data-target="500">0</p>
+                                    <p class="text-gray-500 text-sm">
+                                        <span class="lang-en-content">Satisfied Clients</span>
+                                        <span class="lang-ar-content">عملاء راضون</span>
+                                    </p>
+                                </div>
+                                <div class="card-hover p-4 rounded-xl text-center">
+                                    <i data-lucide="bar-chart-2" class="w-8 h-8 text-indigo-600 mx-auto mb-2"></i>
+                                    <p class="text-4xl font-extrabold text-gray-800 mb-1 counter" data-target="1000">0</p>
+                                    <p class="text-gray-500 text-sm">
+                                        <span class="lang-en-content">Tax Filings Completed</span>
+                                        <span class="lang-ar-content">إقرارات ضريبية</span>
+                                    </p>
+                                </div>
+                                <div class="card-hover p-4 rounded-xl text-center">
+                                    <i data-lucide="award" class="w-8 h-8 text-amber-500 mx-auto mb-2"></i>
+                                    <p class="text-4xl font-extrabold text-gray-800 mb-1 counter" data-target="10">0</p>
+                                    <p class="text-gray-500 text-sm">
+                                        <span class="lang-en-content">Years of Experience</span>
+                                        <span class="lang-ar-content">سنوات خبرة</span>
+                                    </p>
+                                </div>
+                                <div class="card-hover p-4 rounded-xl text-center">
+                                    <i data-lucide="shield-check" class="w-8 h-8 text-green-500 mx-auto mb-2"></i>
+                                    <p class="text-4xl font-extrabold text-gray-800 mb-1 counter" data-target="100">0%</p>
+                                    <p class="text-gray-500 text-sm">
+                                        <span class="lang-en-content">Compliance Rate</span>
+                                        <span class="lang-ar-content">نسبة امتثال</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why" class="py-16 md:py-20 bg-gradient-to-br from-blue-50 to-indigo-50 border-t border-b border-gray-200">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+                        <span class="lang-en-content">Why Partner with Cloud Books?</span>
+                        <span class="lang-ar-content" dir="rtl">💼 لماذا تختار Cloud Books؟</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                        <span class="lang-en-content">Our commitment to excellence makes us the ideal choice for your business. We combine deep expertise with personalized service to deliver results that matter.</span>
+                        <span class="lang-ar-content" dir="rtl">التزامنا بالتميز يجعلنا الخيار الأمثل لأعمالك. نحن نجمع بين الخبرة العميقة والخدمة الشخصية لتقديم نتائج تهمك.</span>
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-10 why-us-grid">
+                    
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-6 flex items-center border-b border-gray-300 pb-3 fade-in-up">
+                            <i data-lucide="briefcase" class="w-7 h-7 mr-3 lang-en-content"></i> 
+                            <i data-lucide="briefcase" class="w-7 h-7 ml-3 lang-ar-content"></i> 
+                            <span class="lang-en-content">Key Differentiators</span>
+                            <span class="lang-ar-content" dir="rtl">مميزاتنا الأساسية</span>
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start p-4 bg-white rounded-lg border-l-4 border-blue-500 transition duration-300 hover:shadow-lg hover:bg-blue-50 fade-in-up">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0 mt-1 lang-en-content"></i>
+                                <div class="lang-en-content">
+                                    <p class="text-lg font-semibold text-gray-800">Market Expertise</p>
+                                    <p class="text-gray-600">Practical experience in the local and regional UAE market with deep understanding of FTA regulations.</p>
+                                </div>
+                                <div class="lang-ar-content flex-grow text-right" dir="rtl">
+                                    <p class="text-lg font-semibold text-gray-800">خبرة عملية</p>
+                                    <p class="text-gray-600">خبرة عملية في السوق المحلي والإقليمي مع فهم عميق لأنظمة الهيئة الاتحادية للضرائب.</p>
+                                </div>
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 ml-4 flex-shrink-0 mt-1 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-start p-4 bg-white rounded-lg border-l-4 border-blue-500 transition duration-300 hover:shadow-lg hover:bg-blue-50 fade-in-up">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0 mt-1 lang-en-content"></i>
+                                <div class="lang-en-content">
+                                    <p class="text-lg font-semibold text-gray-800">Full Compliance</p>
+                                    <p class="text-gray-600">Complete adherence to all UAE tax laws and regulations, ensuring your business stays compliant.</p>
+                                </div>
+                                <div class="lang-ar-content flex-grow text-right" dir="rtl">
+                                    <p class="text-lg font-semibold text-gray-800">التزام كامل</p>
+                                    <p class="text-gray-600">التزام كامل بالقوانين واللوائح الضريبية في الإمارات، مما يضمن بقاء أعمالك متوافقة.</p>
+                                </div>
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 ml-4 flex-shrink-0 mt-1 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-start p-4 bg-white rounded-lg border-l-4 border-blue-500 transition duration-300 hover:shadow-lg hover:bg-blue-50 fade-in-up">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0 mt-1 lang-en-content"></i>
+                                <div class="lang-en-content">
+                                    <p class="text-lg font-semibold text-gray-800">Transparent Pricing</p>
+                                    <p class="text-gray-600">Clear, competitive, and affordable pricing for all services with no hidden costs.</p>
+                                </div>
+                                <div class="lang-ar-content flex-grow text-right" dir="rtl">
+                                    <p class="text-lg font-semibold text-gray-800">أسعار شفافة</p>
+                                    <p class="text-gray-600">أسعار شفافة ومنافسة ومعقولة لجميع الخدمات دون أي تكاليف خفية.</p>
+                                </div>
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 ml-4 flex-shrink-0 mt-1 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-start p-4 bg-white rounded-lg border-l-4 border-blue-500 transition duration-300 hover:shadow-lg hover:bg-blue-50 fade-in-up">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0 mt-1 lang-en-content"></i>
+                                <div class="lang-en-content">
+                                    <p class="text-lg font-semibold text-gray-800">Speed & Accuracy</p>
+                                    <p class="text-gray-600">Fast performance coupled with high precision in results, meeting all deadlines.</p>
+                                </div>
+                                <div class="lang-ar-content flex-grow text-right" dir="rtl">
+                                    <p class="text-lg font-semibold text-gray-800">سرعة ودقة</p>
+                                    <p class="text-gray-600">سرعة في الأداء ودقة في النتائج، مع الالتزام بجميع المواعيد النهائية.</p>
+                                </div>
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 ml-4 flex-shrink-0 mt-1 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-start p-4 bg-white rounded-lg border-l-4 border-blue-500 transition duration-300 hover:shadow-lg hover:bg-blue-50 fade-in-up">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-4 flex-shrink-0 mt-1 lang-en-content"></i>
+                                <div class="lang-en-content">
+                                    <p class="text-lg font-semibold text-gray-800">Continuous Support</p>
+                                    <p class="text-gray-600">Ongoing technical and advisory support, available when you need us most.</p>
+                                </div>
+                                <div class="lang-ar-content flex-grow text-right" dir="rtl">
+                                    <p class="text-lg font-semibold text-gray-800">دعم مستمر</p>
+                                    <p class="text-gray-600">دعم فني واستشاري مستمر، متاح عندما تحتاج إلينا أكثر.</p>
+                                </div>
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 ml-4 flex-shrink-0 mt-1 lang-ar-content"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-hover p-6 md:p-8 rounded-2xl shadow-xl border border-gray-200 fade-in-up">
+                        <h3 class="text-2xl md:text-3xl font-bold text-indigo-700 mb-6 flex items-center border-b border-gray-300 pb-3">
+                            <i data-lucide="shield" class="w-7 h-7 mr-3 lang-en-content"></i> 
+                            <i data-lucide="shield" class="w-7 h-7 ml-3 lang-ar-content"></i> 
+                            <span class="lang-en-content">Core Values</span>
+                            <span class="lang-ar-content" dir="rtl">⚖️ قيمنا الأساسية</span>
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-lg text-gray-800 font-medium hover:text-blue-700 transition p-2 rounded-lg hover:bg-blue-50">
+                                <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-500 mr-3 lang-en-content"></i>
+                                <span class="lang-en-content">Transparency</span>
+                                <span class="lang-ar-content flex-grow text-right" dir="rtl">الشفافية</span>
+                                <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-500 ml-3 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-center text-lg text-gray-800 font-medium hover:text-blue-700 transition p-2 rounded-lg hover:bg-blue-50">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-green-500 mr-3 lang-en-content"></i>
+                                <span class="lang-en-content">Professionalism</span>
+                                <span class="lang-ar-content flex-grow text-right" dir="rtl">الاحترافية</span>
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-green-500 ml-3 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-center text-lg text-gray-800 font-medium hover:text-blue-700 transition p-2 rounded-lg hover:bg-blue-50">
+                                <i data-lucide="clock" class="w-5 h-5 text-red-500 mr-3 lang-en-content"></i>
+                                <span class="lang-en-content">Commitment</span>
+                                <span class="lang-ar-content flex-grow text-right" dir="rtl">الالتزام</span>
+                                <i data-lucide="clock" class="w-5 h-5 text-red-500 ml-3 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-center text-lg text-gray-800 font-medium hover:text-blue-700 transition p-2 rounded-lg hover:bg-blue-50">
+                                <i data-lucide="lock" class="w-5 h-5 text-gray-500 mr-3 lang-en-content"></i>
+                                <span class="lang-en-content">Complete Confidentiality</span>
+                                <span class="lang-ar-content flex-grow text-right" dir="rtl">السرية التامة</span>
+                                <i data-lucide="lock" class="w-5 h-5 text-gray-500 ml-3 lang-ar-content"></i>
+                            </li>
+                            <li class="flex items-center text-lg text-gray-800 font-medium hover:text-blue-700 transition p-2 rounded-lg hover:bg-blue-50">
+                                <i data-lucide="zap" class="w-5 h-5 text-blue-500 mr-3 lang-en-content"></i>
+                                <span class="lang-en-content">Innovation & Development</span>
+                                <span class="lang-ar-content flex-grow text-right" dir="rtl">الابتكار والتطوير المستمر</span>
+                                <i data-lucide="zap" class="w-5 h-5 text-blue-500 ml-3 lang-ar-content"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Customer Testimonials Section -->
+<section class="py-16 bg-white border-t border-gray-200">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-3">
+                <span class="lang-en-content">What Our Clients Say</span>
+                <span class="lang-ar-content">آراء عملائنا</span>
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                <span class="lang-en-content">Discover why 500+ businesses across the UAE trust Cloud Books</span>
+                <span class="lang-ar-content">اكتشف لماذا تثق أكثر من 500 شركة في Cloud Books</span>
+            </p>
+        </div>
+        
+        <!-- Testimonials Slider -->
+        <div class="max-w-6xl mx-auto">
+            <div class="relative">
+                <!-- Slider Container -->
+                <div class="overflow-hidden rounded-2xl">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="testimonials-track">
+                        
+                        <!-- Testimonial 1 - VAT Services -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-md">
+                                        A
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-en-content">Ahmed Al Mansoori</h4>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-ar-content">أحمد المنصوري</h4>
+                                        <p class="text-gray-600 text-sm lang-en-content">CEO - Al Mansoori Trading Co.</p>
+                                        <p class="text-gray-600 text-sm lang-ar-content">الرئيس التنفيذي - شركة المنصوري للتجارة</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-en-content">
+                                    "Cloud Books has been handling our VAT compliance for over 3 years. Their team's attention to deadlines saved us from significant penalties. The bilingual support makes communication seamless."
+                                </p>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-ar-content">
+                                    "Cloud Books تتعامل مع امتثالنا لضريبة القيمة المضافة منذ أكثر من 3 سنوات. انتباه فريقهم للمواعيد النهائية أنقذنا من غرامات كبيرة. الدعم ثنائي اللغة يجعل التواصل سلسًا."
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-amber-400 text-xl">
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    </div>
+                                    <span class="text-blue-600 text-sm font-medium lang-en-content">VAT Services • 3 years</span>
+                                    <span class="text-blue-600 text-sm font-medium lang-ar-content">خدمات الضرائب • 3 سنوات</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 - Corporate Tax -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-800 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-md">
+                                        S
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-en-content">Sarah Al Dhahiri</h4>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-ar-content">سارة الظاهري</h4>
+                                        <p class="text-gray-600 text-sm lang-en-content">Finance Director - Al Dhahiri Group</p>
+                                        <p class="text-gray-600 text-sm lang-ar-content">مديرة المالية - مجموعة الظاهري</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-en-content">
+                                    "The corporate tax implementation support was exceptional. Cloud Books translated complex regulations into actionable strategies that saved us from costly compliance errors."
+                                </p>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-ar-content">
+                                    "كان دعم تطبيق الضريبة على الشركات استثنائيًا. حولت Cloud Books اللوائح المعقدة إلى استراتيجيات قابلة للتنفيذ أنقذتنا من أخطاء امتثال مكلفة."
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-amber-400 text-xl">
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    </div>
+                                    <span class="text-green-600 text-sm font-medium lang-en-content">Corporate Tax • 2 years</span>
+                                    <span class="text-green-600 text-sm font-medium lang-ar-content">الضريبة على الشركات • سنتين</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 - Construction Accounting -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gradient-to-br from-purple-50 to-violet-50 p-8 rounded-2xl border border-purple-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-800 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-md">
+                                        M
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-en-content">Mohammed Al Balushi</h4>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-ar-content">محمد البلوشي</h4>
+                                        <p class="text-gray-600 text-sm lang-en-content">Owner - Al Balushi Contracting</p>
+                                        <p class="text-gray-600 text-sm lang-ar-content">المالك - مؤسسة البلوشي للمقاولات</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-en-content">
+                                    "As a construction company with complex supplier networks, Cloud Books streamlined our financial operations and identified 22% cost savings we never knew were possible."
+                                </p>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-ar-content">
+                                    "كشركة مقاولات ذات شبكات موردين معقدة، Cloud Books سهلت عملياتنا المالية وحددت توفيرًا في التكاليف بنسبة 22٪ لم نكن نعرف أنها ممكنة."
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-amber-400 text-xl">
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    </div>
+                                    <span class="text-purple-600 text-sm font-medium lang-en-content">Accounting • 4 years</span>
+                                    <span class="text-purple-600 text-sm font-medium lang-ar-content">المحاسبة • 4 سنوات</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 - Healthcare VAT -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl border border-amber-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-amber-600 to-amber-800 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-md">
+                                        F
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-en-content">Fatima Al Qasimi</h4>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-ar-content">فاطمة القاسمي</h4>
+                                        <p class="text-gray-600 text-sm lang-en-content">Director - Al Qasimi Medical Center</p>
+                                        <p class="text-gray-600 text-sm lang-ar-content">مديرة - مركز القاسمي الطبي</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-en-content">
+                                    "Their healthcare sector VAT expertise is unmatched. They navigated complex medical service regulations while maintaining complete patient data confidentiality."
+                                </p>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-ar-content">
+                                    "خبرتهم في ضريبة القيمة المضافة لقطاع الرعاية الصحية لا مثيل لها. تعاملوا مع لوائح الخدمات الطبية المعقدة مع الحفاظ على سرية بيانات المرضى بالكامل."
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-amber-400 text-xl">
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    </div>
+                                    <span class="text-amber-600 text-sm font-medium lang-en-content">Healthcare VAT • 1 year</span>
+                                    <span class="text-amber-600 text-sm font-medium lang-ar-content">القطاع الطبي • سنة</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 - Internal Audit -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-gradient-to-br from-red-50 to-pink-50 p-8 rounded-2xl border border-red-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-800 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 shadow-md">
+                                        R
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-en-content">Rashid Al Shamsi</h4>
+                                        <h4 class="font-bold text-gray-800 text-lg lang-ar-content">راشد الشامسي</h4>
+                                        <p class="text-gray-600 text-sm lang-en-content">Partner - Al Shamsi Law Firm</p>
+                                        <p class="text-gray-600 text-sm lang-ar-content">شريك - مكتب الشامسي للمحاماة</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-en-content">
+                                    "The internal audit uncovered operational inefficiencies that were costing us 15% in unnecessary expenses. Their recommendations transformed our financial controls."
+                                </p>
+                                <p class="text-gray-700 text-lg leading-relaxed mb-4 lang-ar-content">
+                                    "كشف التدقيق الداخلي عن أوجه قصور تشغيلية كانت تكلفنا 15٪ في نفقات غير ضرورية. غيرت توصياتهم ضوابطنا المالية."
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex text-amber-400 text-xl">
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                    </div>
+                                    <span class="text-red-600 text-sm font-medium lang-en-content">Internal Audit • 3 years</span>
+                                    <span class="text-red-600 text-sm font-medium lang-ar-content">التدقيق الداخلي • 3 سنوات</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <div class="flex justify-center mt-8 space-x-4">
+                    <button onclick="prevTestimonial()" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
+                        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                    </button>
+                    <button onclick="nextTestimonial()" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
+                        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                
+                <!-- Dots Indicator -->
+                <div class="flex justify-center mt-6 space-x-2" id="testimonial-dots">
+                    <!-- Dots will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="fade-in-up">
+                <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                <div class="text-gray-600 text-sm">
+                    <span class="lang-en-content">Satisfied Clients</span>
+                    <span class="lang-ar-content">عميل راضٍ</span>
+                </div>
+            </div>
+            <div class="fade-in-up">
+                <div class="text-3xl font-bold text-green-600 mb-2">98%</div>
+                <div class="text-gray-600 text-sm">
+                    <span class="lang-en-content">Retention Rate</span>
+                    <span class="lang-ar-content">معدل الاحتفاظ</span>
+                </div>
+            </div>
+            <div class="fade-in-up">
+                <div class="text-3xl font-bold text-amber-600 mb-2">4.9/5</div>
+                <div class="text-gray-600 text-sm">
+                    <span class="lang-en-content">Average Rating</span>
+                    <span class="lang-ar-content">متوسط التقييم</span>
+                </div>
+            </div>
+            <div class="fade-in-up">
+                <div class="text-3xl font-bold text-purple-600 mb-2">10+</div>
+                <div class="text-gray-600 text-sm">
+                    <span class="lang-en-content">Years Experience</span>
+                    <span class="lang-ar-content">سنوات خبرة</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Information Section -->
+        <section class="py-16 bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12 fade-in-up">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+                            <span class="lang-en-content">Get In Touch</span>
+                            <span class="lang-ar-content" dir="rtl">تواصل معنا</span>
+                        </h2>
+                        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                            <span class="lang-en-content">Ready to streamline your financial operations? Contact us today for a consultation.</span>
+                            <span class="lang-ar-content" dir="rtl">مستعد لتبسيط عملياتك المالية؟ اتصل بنا اليوم للحصول على استشارة.</span>
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-blue-50 rounded-2xl p-6 border border-blue-200 fade-in-up">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 mr-2"></i>
+                                <span class="lang-en-content">Our Location</span>
+                                <span class="lang-ar-content" dir="rtl">موقعنا</span>
+                            </h3>
+                            <p class="text-gray-600 mb-6">
+                                <span class="lang-en-content">We serve clients across the UAE with our main office located in Dubai.</span>
+                                <span class="lang-ar-content" dir="rtl">نخدم العملاء في جميع أنحاء الإمارات مع مكتبنا الرئيسي في دبي.</span>
+                            </p>
+                            
+                            <div class="space-y-4 mt-6">
+                                <a href="tel:+971502343297" class="flex items-center contact-info-item text-gray-600 hover:text-blue-600">
+                                    <i data-lucide="phone" class="w-5 h-5 mr-3"></i>
+                                    +971 50 234 3297
+                                </a>
+                                <a href="mailto:info@cloudbooksae.com" class="flex items-center contact-info-item text-gray-600 hover:text-blue-600">
+                                    <i data-lucide="mail" class="w-5 h-5 mr-3"></i>
+                                    info@cloudbooksae.com
+                                </a>
+                                <div class="flex items-center text-gray-600">
+                                    <i data-lucide="clock" class="w-5 h-5 mr-3"></i>
+                                    <span class="lang-en-content">Sun - Thu: 9:00 AM - 6:00 PM</span>
+                                    <span class="lang-ar-content" dir="rtl">الأحد - الخميس: 9:00 ص - 6:00 م</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-50 rounded-2xl p-6 border border-green-200 fade-in-up">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                                <i data-lucide="message-circle" class="w-5 h-5 text-green-600 mr-2"></i>
+                                <span class="lang-en-content">Quick Connect</span>
+                                <span class="lang-ar-content" dir="rtl">اتصال سريع</span>
+                            </h3>
+                            <p class="text-gray-600 mb-6">
+                                <span class="lang-en-content">Prefer to message us directly? Use WhatsApp for quick responses.</span>
+                                <span class="lang-ar-content" dir="rtl">تفضل مراسلتنا مباشرة؟ استخدم واتساب للحصول على ردود سريعة.</span>
+                            </p>
+                            
+                            <div class="mt-6">
+                                <a href="https://wa.me/971502343297" target="_blank" class="inline-flex items-center px-5 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors pulse-animation">
+                                    <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+                                    <span class="lang-en-content">Chat on WhatsApp</span>
+                                    <span class="lang-ar-content" dir="rtl">محادثة على واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="py-16 bg-gradient-to-b from-blue-50 to-white border-t border-gray-200">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="max-w-4xl mx-auto p-6 md:p-8 lg:p-12 bg-white rounded-2xl shadow-2xl border border-blue-300 contact-form-container fade-in-up">
+                    <div class="text-center mb-10">
+                        <i data-lucide="mail-plus" class="w-10 h-10 text-blue-600 mx-auto mb-3"></i>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
+                            <span class="lang-en-content">Get Your Free Consultation</span>
+                            <span class="lang-ar-content" dir="rtl">احصل على استشارتك المجانية</span>
+                        </h2>
+                        <p class="text-gray-600 text-base md:text-lg">
+                            <span class="lang-en-content">We will reach out to you within 24 hours to discuss your needs.</span>
+                            <span class="lang-ar-content" dir="rtl">سنتواصل معك في غضون 24 ساعة لمناقشة احتياجاتك.</span>
+                        </p>
+                    </div>
+
+                    <form id="consultation-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="relative">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                                    <span class="lang-en-content">Full Name</span>
+                                    <span class="lang-ar-content" dir="rtl">الاسم بالكامل</span>
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required class="w-full pl-10 pr-3 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                                <i data-lucide="user" class="absolute left-3 top-9 w-5 h-5 text-gray-500"></i>
+                            </div>
+                            <div class="relative">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                    <span class="lang-en-content">Email Address</span>
+                                    <span class="lang-ar-content" dir="rtl">البريد الإلكتروني</span>
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="example@domain.com" required class="w-full pl-10 pr-3 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                                <i data-lucide="mail" class="absolute left-3 top-9 w-5 h-5 text-gray-500"></i>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+                                <span class="lang-en-content">Phone Number (Required)</span>
+                                <span class="lang-ar-content" dir="rtl">رقم الهاتف (مطلوب)</span>
+                            </label>
+                            <input type="tel" id="phone" name="phone" placeholder="+971 5x xxx xx xx" required class="w-full pl-10 pr-3 py-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                            <i data-lucide="phone" class="absolute left-3 top-9 w-5 h-5 text-gray-500"></i>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                                <span class="lang-en-content">Your Message</span>
+                                <span class="lang-ar-content" dir="rtl">رسالتك</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you achieve your financial goals?" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 transition-all"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-[1.01] shadow-lg shadow-blue-500/40 flex items-center justify-center">
+                            <i data-lucide="send" class="w-5 h-5 mr-2 lang-en-content"></i>
+                            <span class="lang-en-content">Send Consultation Request</span>
+                            <span class="lang-ar-content" dir="rtl">إرسال طلب الاستشارة</span>
+                            <i data-lucide="send" class="w-5 h-5 ml-2 lang-ar-content"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+  
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 lg:px-8 text-center text-gray-300">
+            <p>&copy; <span id="current-year"></span> Cloud Books. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- Social Icons -->
+<div id="social-icons-container">
+    
+    <!-- WhatsApp -->
+    <a href="https://wa.me/971502343297" 
+       target="_blank"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #25D366, #128C7E);">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-white">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+971502343297"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+        <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+        <span>Call Now</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info@cloudbooksae.com"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+        <i data-lucide="mail" class="w-5 h-5 text-white"></i>
+        <span>Email</span>
+    </a>
+
+    <!-- Location -->
+    <a href="https://maps.app.goo.gl/JPLFkwmLiePfUD7n9?g_st=awb"
+       target="_blank"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+        <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+        <span>Location</span>
+    </a>
+
+    <!-- Toggle Button -->
+    <button id="toggle-icons-btn" class="social-icon-item">
+        <i data-lucide="eye" id="toggle-icon" class="w-5 h-5 text-white"></i>
+        <span>Hide</span>
+    </button>
+
+</div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    
+    <script>
+
+// JavaScript للأيقونات الثابتة في الشمال
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('social-icons-container');
+    const toggleBtn = document.getElementById('toggle-icons-btn');
+    const toggleIcon = document.getElementById('toggle-icon');
+    const toggleSpan = toggleBtn.querySelector('span');
+    
+    if (!container || !toggleBtn || !toggleIcon) return;
+    
+    let iconsVisible = true;
+    
+    // دالة تبديل الإخفاء/الإظهار
+    function toggleIcons() {
+        if (iconsVisible) {
+            // إخفاء الأيقونات
+            container.classList.add('hide-icons');
+            toggleIcon.setAttribute('data-lucide', 'eye-off');
+            toggleSpan.textContent = 'Show';
+        } else {
+            // إظهار الأيقونات
+            container.classList.remove('hide-icons');
+            toggleIcon.setAttribute('data-lucide', 'eye');
+            toggleSpan.textContent = 'Hide';
+        }
+        
+        // تبديل الحالة
+        iconsVisible = !iconsVisible;
+        
+        // تحديث الأيقونات
+        lucide.createIcons();
+    }
+    
+    // إضافة حدث النقر
+    toggleBtn.addEventListener('click', toggleIcons);
+    
+    // تحديث الأيقونات عند تحميل الصفحة
+    lucide.createIcons();
+    
+    // لا نغير موضع الأيقونات عند تغيير اللغة
+    if (typeof toggleLanguage === 'function') {
+        const originalToggleLanguage = toggleLanguage;
+        window.toggleLanguage = function(lang) {
+            originalToggleLanguage(lang);
+            // الحفاظ على الأيقونات في الشمال
+            setTimeout(() => {
+                lucide.createIcons();
+                // التأكد من أن الأيقونات تبقى في الشمال
+                if (lang === 'ar') {
+                    container.style.left = '10px';
+                    container.style.right = 'auto';
+                } else {
+                    container.style.left = '10px';
+                    container.style.right = 'auto';
+                }
+            }, 50);
+        };
+    }
+});
+        // --- TESTIMONIALS SLIDER WITH BILINGUAL SUPPORT ---
+let currentTestimonial = 0;
+const totalTestimonials = 5;
+
+function createTestimonialDots() {
+    const dotsContainer = document.getElementById('testimonial-dots');
+    dotsContainer.innerHTML = '';
+    
+    for (let i = 0; i < totalTestimonials; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-3 h-3 rounded-full transition-all duration-300 ${i === 0 ? 'bg-blue-600' : 'bg-gray-300'}`;
+        dot.onclick = () => goToTestimonial(i);
+        dotsContainer.appendChild(dot);
+    }
+}
+
+function updateTestimonialSlider() {
+    const track = document.getElementById('testimonials-track');
+    const dots = document.querySelectorAll('#testimonial-dots button');
+    
+    if (track) {
+        track.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+    }
+    
+    // Update dots
+    dots.forEach((dot, index) => {
+        dot.className = `w-3 h-3 rounded-full transition-all duration-300 ${index === currentTestimonial ? 'bg-blue-600' : 'bg-gray-300'}`;
+    });
+}
+
+function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+    updateTestimonialSlider();
+}
+
+function prevTestimonial() {
+    currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+    updateTestimonialSlider();
+}
+
+function goToTestimonial(index) {
+    currentTestimonial = index;
+    updateTestimonialSlider();
+}
+
+// Auto slide functionality
+let autoSlideInterval;
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextTestimonial, 5000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+// Initialize testimonials slider
+function initTestimonials() {
+    createTestimonialDots();
+    updateTestimonialSlider();
+    startAutoSlide();
+    
+    // Pause auto-slide on hover
+    const sliderContainer = document.querySelector('#testimonials-track');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    }
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', initTestimonials);
+
+// Re-initialize when language changes
+window.addEventListener('languageChange', initTestimonials);
+
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // --- LANGUAGE TOGGLE FUNCTIONALITY ---
+            const body = document.body;
+            const langEnBtn = document.getElementById('lang-btn-en');
+            const langArBtn = document.getElementById('lang-btn-ar');
+            const langEnContent = document.querySelectorAll('.lang-en-content');
+            const langArContent = document.querySelectorAll('.lang-ar-content');
+            
+            // Function to toggle language
+            window.toggleLanguage = function(lang) {
+                if (lang === 'ar') {
+                    // Switch to Arabic
+                    body.setAttribute('dir', 'rtl');
+                    body.style.fontFamily = 'Cairo, "Poppins", sans-serif'; 
+                    langEnContent.forEach(el => el.style.display = 'none');
+                    langArContent.forEach(el => el.style.display = 'block');
+                    langArBtn.classList.add('lang-active');
+                    langEnBtn.classList.remove('lang-active');
+                    document.documentElement.lang = 'ar';
+                    
+                    document.querySelectorAll('.flex.items-start').forEach(el => {
+                        if (el.closest('.lang-ar-content')) {
+                            el.style.flexDirection = 'row-reverse';
+                        } else {
+                            el.style.flexDirection = 'row';
+                        }
+                    });
+
+                } else {
+                    // Switch to English (Default)
+                    body.setAttribute('dir', 'ltr');
+                    body.style.fontFamily = 'Poppins, "Arial", sans-serif';
+                    langEnContent.forEach(el => el.style.display = 'block');
+                    langArContent.forEach(el => el.style.display = 'none');
+                    langEnBtn.classList.add('lang-active');
+                    langArBtn.classList.remove('lang-active');
+                    document.documentElement.lang = 'en';
+
+                    document.querySelectorAll('.flex.items-start').forEach(el => {
+                        el.style.flexDirection = 'row';
+                    });
+                }
+            }
+
+            // Set default language to English on load
+            toggleLanguage('en'); 
+
+            // --- FORM SUBMISSION VIA WHATSAPP ---
+            const form = document.getElementById('consultation-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const message = document.getElementById('message').value;
+                
+                // Create WhatsApp message
+                const whatsappMessage = `Hello Cloud Books!%0A%0A*Consultation Request*%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+                
+                // Open WhatsApp with pre-filled message
+                window.open(`https://wa.me/971502343297?text=${whatsappMessage}`, '_blank');
+                
+                // Reset form
+                form.reset();
+                
+                // Show success message
+                alert('Thank you! You will be redirected to WhatsApp to send your consultation request.');
+            });
+
+            // --- COUNTER ANIMATION ---
+            const counters = document.querySelectorAll('.counter');
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = +counter.getAttribute('data-target');
+                        const isPercentage = counter.textContent.includes('%');
+                        let count = 0;
+                        const increment = target / 100;
+                        
+                        const updateCount = () => {
+                            if (count < target) {
+                                count += increment;
+                                counter.innerText = Math.ceil(count) + (isPercentage ? '%' : '');
+                                setTimeout(updateCount, 10);
+                            } else {
+                                counter.innerText = target + (isPercentage ? '%' : '');
+                            }
+                        };
+                        
+                        updateCount();
+                        observer.unobserve(counter);
+                    }
+                });
+            }, observerOptions);
+
+            counters.forEach(counter => { observer.observe(counter); });
+
+            // --- MOBILE MENU FUNCTIONALITY ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            function toggleMobileMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mobileMenu.classList.contains('translate-x-full')) {
+                    icon.setAttribute('data-lucide', 'menu');
+                } else {
+                    icon.setAttribute('data-lucide', 'x');
+                }
+                lucide.createIcons();
+            }
+            
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+            window.closeMobileMenu = function() {
+                if (!mobileMenu.classList.contains('translate-x-full')) {
+                    mobileMenu.classList.add('translate-x-full');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                }
+            }
+
+            // --- HEADER SHRINK ON SCROLL ---
+            const header = document.getElementById('header');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // --- FADE IN ANIMATION ON SCROLL ---
+            const fadeElements = document.querySelectorAll('.fade-in-up');
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                fadeObserver.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

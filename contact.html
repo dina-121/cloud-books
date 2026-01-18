@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CloudBooks | Certified Tax Agent & Accounting Experts</title>
+    <meta name="description" content="Get in touch with CloudBooks - Certified Tax Agent & Accounting Experts in Dubai. Contact us for VAT, Corporate Tax, Accounting & Business Consultancy services.">
+    
+    
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="canonical" href="https://cloudbooksae.com/contact.html" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <style>
+        
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --primary-light: #3b82f6;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --dark: #0f172a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        
+        body.rtl {
+            direction: rtl;
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+        
+        body.dark-theme {
+            background-color: var(--dark);
+            color: #e2e8f0;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b, #eab308);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+            border: 1px solid #e2e8f0;
+        }
+        
+        body.dark-theme .contact-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #d1d5db;
+            background: #f9fafb;
+            color: #374151;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body.rtl .form-input {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body.dark-theme .form-input {
+            background: #334155;
+            border-color: #475569;
+            color: #e2e8f0;
+        }
+        
+        .form-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.2);
+            outline: none;
+        }
+        
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+        }
+        
+        body.dark-theme .social-icon {
+            background: #334155;
+            border-color: #475569;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-2px);
+            background: var(--primary-light);
+            color: white;
+        }
+        
+        .map-container {
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 3rem 0;
+            }
+        }
+        
+        .lang-active {
+            background-color: var(--primary);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .theme-toggle-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-btn:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        
+        body.dark-theme .theme-toggle-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100%;
+            background: white;
+            z-index: 999;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        body.dark-theme .mobile-menu {
+            background: var(--dark);
+        }
+        
+        body.rtl .mobile-menu {
+            right: auto;
+            left: -100%;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        body.rtl .mobile-menu.active {
+            right: auto;
+            left: 0;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .floating-icons {
+            position: fixed;
+            right: 2rem;
+            bottom: 6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 98;
+        }
+        
+        body.rtl .floating-icons {
+            right: auto;
+            left: 2rem;
+        }
+        
+        .floating-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .floating-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        .whatsapp-float {
+            background: #25D366;
+            color: white;
+        }
+        
+        .call-float {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+        }
+        
+        .email-float {
+            background: linear-gradient(135deg, #EA4335, #4285F4);
+            color: white;
+        }
+        
+        .success-message {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        .error-message {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .error-message.show {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.1"><path fill="%23ffffff" d="M0,0L1000,0L1000,1000L0,1000Z"/></svg>');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b, #eab308);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .form-loader {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3b82f6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .hidden-language {
+            display: none;
+        }
+        
+        /* Radio card styles */
+        .method-card {
+            cursor: pointer;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        body.dark-theme .method-card {
+            background: #1e293b;
+            border-color: #475569;
+        }
+        
+        .method-card:hover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        
+        body.dark-theme .method-card:hover {
+            border-color: #60a5fa;
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .method-card.selected {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        }
+        
+        body.dark-theme .method-card.selected {
+            border-color: #60a5fa;
+            background-color: rgba(59, 130, 246, 0.2);
+        }
+        
+        .method-card.whatsapp.selected {
+            border-color: #22c55e;
+            background-color: #f0fdf4;
+        }
+        
+        body.dark-theme .method-card.whatsapp.selected {
+            border-color: #4ade80;
+            background-color: rgba(34, 197, 94, 0.2);
+        }
+        
+        .method-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .email-icon {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+        
+        .whatsapp-icon {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+        }
+
+
+   /* CSS للأيقونات الثابتة في الشمال */
+#social-icons-container {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon-item {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+/* تأثيرات الـ Hover */
+.social-icon-item:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* التلميحات */
+.social-icon-item span {
+    position: absolute;
+    left: 50px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.social-icon-item:hover span {
+    opacity: 1;
+    left: 45px;
+}
+
+/* إخفاء الأيقونات */
+.hide-icons .social-icon-item:not(#toggle-icons-btn) {
+    opacity: 0;
+    transform: translateY(15px) scale(0.8);
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* زر التبديل */
+#toggle-icons-btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    margin-top: 5px;
+}
+
+/* دعم اللغة العربية - ثابت في اليسار دائماً */
+/* لا نغير موضع الأيقونات في اللغة العربية */
+body.rtl .social-icon-item span {
+    left: auto;
+    right: 50px;
+}
+
+body.rtl .social-icon-item:hover span {
+    left: auto;
+    right: 45px;
+}
+
+/* تحسينات للجوال */
+@media (max-width: 768px) {
+    #social-icons-container {
+        left: 5px;
+        bottom: 5px;
+        gap: 8px;
+    }
+    
+    .social-icon-item {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon-item span {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+
+/* للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+    #social-icons-container {
+        left: 3px;
+        bottom: 3px;
+    }
+    
+    .social-icon-item {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .social-icon-item span {
+        display: none; /* إخفاء التلميحات على الموبايل الصغير */
+    }
+}     
+
+
+    </style>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        arabic: ['Cairo', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg dark:bg-gray-900">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-16">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3 min-w-0">
+                    <img src="images/logo1_compressed.webp" alt="CloudBooks Logo" class="w-10 h-10 object-contain rounded-lg">
+                    <div class="flex flex-col">
+                        <div class="text-gray-900 text-lg font-extrabold dark:text-white">
+                            <span class="bg-gradient-to-r from-blue-700 to-indigo-800 bg-clip-text text-transparent">CloudBooks</span>
+                        </div>
+                        <div class="text-gray-500 text-xs tracking-wider dark:text-gray-400">
+                            Certified Tax Agency
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" 
+                       class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300 dark:text-gray-400 dark:hover:text-blue-400">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-ar hidden-language">الرئيسية</span>
+                    </a>
+
+                    <a href="index.html#services" 
+                       class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300 dark:text-gray-400 dark:hover:text-blue-400">
+                        <span class="lang-en">Services</span>
+                        <span class="lang-ar hidden-language">الخدمات</span>
+                    </a>
+
+                    <a href="about.html" 
+                       class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300 dark:text-gray-400 dark:hover:text-blue-400">
+                        <span class="lang-en">About</span>
+                        <span class="lang-ar hidden-language">من نحن</span>
+                    </a>
+
+                    <a href="contact.html" 
+                       class="text-blue-600 font-medium transition-colors duration-300 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-1">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-ar hidden-language">اتصل بنا</span>
+                    </a>
+
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" 
+                            class="theme-toggle-btn text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400">
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                        <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                    </button>
+
+                    <!-- Language Switcher -->
+                    <div class="language-switcher flex items-center space-x-1 bg-gray-100 px-2 py-1 rounded-md dark:bg-gray-800">
+                        <button onclick="setLanguage('en')" id="lang-en-btn"
+                            class="text-xs px-3 py-1 rounded-sm font-bold bg-blue-600 text-white transition lang-btn">
+                            EN
+                        </button>
+                        <button onclick="setLanguage('ar')" id="lang-ar-btn"
+                            class="text-xs px-3 py-1 rounded-sm text-gray-700 hover:bg-gray-200 transition dark:text-gray-300 dark:hover:bg-gray-700 lang-btn">
+                            عربي
+                        </button>
+                    </div>
+
+                    <a href="tel:+971502343297" class="btn-primary">
+                        <span class="lang-en">Call Now</span>
+                        <span class="lang-ar hidden-language">اتصل الآن</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center lg:hidden">
+                    <button id="theme-toggle-mobile" class="theme-toggle-btn text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 mr-3">
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                        <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                    </button>
+                    
+                    <button id="lang-toggle-mobile" class="text-sm font-semibold bg-blue-600 text-white px-3 py-1 rounded-md hover:bg-blue-700 transition mr-3">
+                        <span class="lang-en">عربي</span>
+                        <span class="lang-ar hidden-language">EN</span>
+                    </button>
+                    
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 transition-colors dark:text-gray-400 dark:hover:text-blue-400">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="p-6 h-full">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors rtl:right-auto rtl:left-4" onclick="closeMobileMenu()">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <nav class="space-y-4 mt-12">
+                <a href="index.html" onclick="closeMobileMenu()" class="block text-lg font-medium text-gray-800 hover:text-blue-600 py-3 transition-colors dark:text-gray-300 dark:hover:text-blue-400">
+                    <span class="lang-en">Home</span>
+                    <span class="lang-ar hidden-language">الرئيسية</span>
+                </a>
+                <a href="index.html#services" onclick="closeMobileMenu()" class="block text-lg font-medium text-gray-800 hover:text-blue-600 py-3 transition-colors dark:text-gray-300 dark:hover:text-blue-400">
+                    <span class="lang-en">Services</span>
+                    <span class="lang-ar hidden-language">الخدمات</span>
+                </a>
+                <a href="about.html" onclick="closeMobileMenu()" class="block text-lg font-medium text-gray-800 hover:text-blue-600 py-3 transition-colors dark:text-gray-300 dark:hover:text-blue-400">
+                    <span class="lang-en">About</span>
+                    <span class="lang-ar hidden-language">من نحن</span>
+                </a>
+                <a href="contact.html" onclick="closeMobileMenu()" class="block text-lg font-medium text-blue-600 py-3 border-r-4 border-blue-600 dark:text-blue-400 dark:border-blue-400 rtl:border-l-4 rtl:border-r-0">
+                    <span class="lang-en">Contact</span>
+                    <span class="lang-ar hidden-language">اتصل بنا</span>
+                </a>
+            </nav>
+            
+            <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-700">
+                <h4 class="text-sm font-semibold text-blue-600 mb-4 dark:text-blue-400">
+                    <span class="lang-en">Contact Info</span>
+                    <span class="lang-ar hidden-language">معلومات الاتصال</span>
+                </h4>
+                <a href="tel:+971502343297" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors mb-3 dark:text-gray-400 dark:hover:text-blue-400">
+                    <i data-lucide="phone" class="w-4 h-4 mr-3 rtl:mr-0 rtl:ml-3 text-blue-500"></i>
+                    <span>+971 50 234 3297</span>
+                </a>
+                <a href="mailto:info@cloudbooksae.com" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors mb-3 dark:text-gray-400 dark:hover:text-blue-400">
+                    <i data-lucide="mail" class="w-4 h-4 mr-3 rtl:mr-0 rtl:ml-3 text-blue-500"></i>
+                    <span>info@cloudbooksae.com</span>
+                </a>
+                <a href="https://maps.app.goo.gl/JPLFkwmLiePfUD7n9?g_st=awb" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors dark:text-gray-400 dark:hover:text-blue-400">
+                    <i data-lucide="map-pin" class="w-4 h-4 mr-3 rtl:mr-0 rtl:ml-3 text-blue-500"></i>
+                    <span class="text-sm">
+                        <span class="lang-en">Dubai, Al Garhood</span>
+                        <span class="lang-ar hidden-language">دبي، الغر hood</span>
+                    </span>
+                </a>
+            </div>
+            
+            <div class="flex space-x-3 pt-8 mt-8 border-t border-gray-200 dark:border-gray-700">
+                <a href="https://www.facebook.com/share/1CcbFJNEVM/" target="_blank" class="social-icon">
+                    <i data-lucide="facebook" class="w-5 h-5 text-gray-600 dark:text-gray-400"></i>
+                </a>
+                <a href="https://www.instagram.com/cloudbooks.accounting_taxagent?igsh=cnhvenB4a21vYmht" target="_blank" class="social-icon">
+                    <i data-lucide="instagram" class="w-5 h-5 text-gray-600 dark:text-gray-400"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/the-accountantfirm/" target="_blank" class="social-icon">
+                    <i data-lucide="linkedin" class="w-5 h-5 text-gray-600 dark:text-gray-400"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-24 pb-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="lang-en">Get In Touch With Us</span>
+                    <span class="lang-ar hidden-language">تواصل معنا</span>
+                </h1>
+                <p class="text-xl text-blue-100 mb-8">
+                    <span class="lang-en">We're here to help you with all your tax and accounting needs</span>
+                    <span class="lang-ar hidden-language">نحن هنا لمساعدتك في جميع احتياجاتك الضريبية والمحاسبية</span>
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="tel:+971502343297" class="btn-primary inline-flex items-center">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2"></i>
+                        <span class="lang-en">Call Now</span>
+                        <span class="lang-ar hidden-language">اتصل الآن</span>
+                    </a>
+                    <a href="#contact-form" class="btn-secondary inline-flex items-center">
+                        <i data-lucide="message-square" class="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2"></i>
+                        <span class="lang-en">Send Message</span>
+                        <span class="lang-ar hidden-language">إرسال رسالة</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Info Section -->
+        <section class="section-padding bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        <span class="lang-en">Our Contact Information</span>
+                        <span class="lang-ar hidden-language">معلومات الاتصال</span>
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        <span class="lang-en">Reach out to us through any of these channels</span>
+                        <span class="lang-ar hidden-language">تواصل معنا من خلال أي من هذه القنوات</span>
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Phone Card -->
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-6">
+                            <i data-lucide="phone" class="text-white w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            <span class="lang-en">Phone</span>
+                            <span class="lang-ar hidden-language">الهاتف</span>
+                        </h3>
+                        <a href="tel:+971502343297" class="text-blue-600 hover:text-blue-700 text-lg font-medium block mb-2 dark:text-blue-400 dark:hover:text-blue-300">
+                            +971 50 234 3297
+                        </a>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            <span class="lang-en">Available 24/7 for urgent inquiries</span>
+                            <span class="lang-ar hidden-language">متاح 24/7 للاستفسارات العاجلة</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Email Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center mb-6">
+                            <i data-lucide="mail" class="text-white w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            <span class="lang-en">Email</span>
+                            <span class="lang-ar hidden-language">البريد الإلكتروني</span>
+                        </h3>
+                        <a href="mailto:info@cloudbooksae.com" class="text-blue-600 hover:text-blue-700 text-lg font-medium block mb-2 dark:text-blue-400 dark:hover:text-blue-300">
+                            info@cloudbooksae.com
+                        </a>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            <span class="lang-en">Response within 24 hours</span>
+                            <span class="lang-ar hidden-language">الرد خلال 24 ساعة</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Location Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center mb-6">
+                            <i data-lucide="map-pin" class="text-white w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            <span class="lang-en">Location</span>
+                            <span class="lang-ar hidden-language">الموقع</span>
+                        </h3>
+                        <p class="text-gray-800 dark:text-gray-300 font-medium mb-2">
+                            <span class="lang-en">Dubai, Al Garhood</span>
+                            <span class="lang-ar hidden-language">دبي، القرهود</span>
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            <span class="lang-en">Al Khaima Building Office 38</span>
+                            <span class="lang-ar hidden-language">مبنى الخيمة مكتب 38</span>
+                        </p>
+                        <a href="https://maps.app.goo.gl/JPLFkwmLiePfUD7n9?g_st=awb" target="_blank" class="text-blue-600 hover:text-blue-700 inline-flex items-center dark:text-blue-400 dark:hover:text-blue-300">
+                            <i data-lucide="map" class="w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2"></i>
+                            <span class="lang-en">View on Google Maps</span>
+                            <span class="lang-ar hidden-language">عرض على خرائط جوجل</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="section-padding">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-start">
+                        <!-- Form Column -->
+                        <div>
+                            <div class="mb-8">
+                                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                                    <span class="lang-en">Send Us a Message</span>
+                                    <span class="lang-ar hidden-language">أرسل لنا رسالة</span>
+                                </h2>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    <span class="lang-en">Fill out the form below and we'll get back to you as soon as possible</span>
+                                    <span class="lang-ar hidden-language">املأ النموذج أدناه وسنعود إليك في أقرب وقت ممكن</span>
+                                </p>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <!-- Success Message -->
+                                <div id="success-message" class="success-message">
+                                    <i data-lucide="check-circle" class="w-5 h-5 inline-block mr-2 rtl:mr-0 rtl:ml-2"></i>
+                                    <span class="lang-en">Message sent successfully! We'll contact you soon.</span>
+                                    <span class="lang-ar hidden-language">تم إرسال الرسالة بنجاح! سنتواصل معك قريباً.</span>
+                                </div>
+                                
+                                <!-- Success WhatsApp Message -->
+                                <div id="whatsapp-success-message" class="success-message" style="display: none;">
+                                    <i data-lucide="message-circle" class="w-5 h-5 inline-block mr-2 rtl:mr-0 rtl:ml-2"></i>
+                                    <span class="lang-en">Redirecting to WhatsApp... Please send your message there.</span>
+                                    <span class="lang-ar hidden-language">جاري التوجيه إلى واتساب... يرجى إرسال رسالتك هناك.</span>
+                                </div>
+                                
+                                <!-- Error Message -->
+                                <div id="error-message" class="error-message">
+                                    <i data-lucide="alert-circle" class="w-5 h-5 inline-block mr-2 rtl:mr-0 rtl:ml-2"></i>
+                                    <span id="error-text" class="lang-en">Error sending message. Please try again.</span>
+                                    <span id="error-text-ar" class="lang-ar hidden-language">حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.</span>
+                                </div>
+                                
+                                <!-- Contact Form -->
+                                <form id="contactForm" class="space-y-6">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium mb-2">
+                                                <span class="lang-en">Full Name *</span>
+                                                <span class="lang-ar hidden-language">الاسم الكامل *</span>
+                                            </label>
+                                            <input type="text" id="name" name="name" required class="form-input" 
+                                                   placeholder='<span class="lang-en">Enter your full name</span><span class="lang-ar hidden-language">أدخل اسمك الكامل</span>'>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium mb-2">
+                                                <span class="lang-en">Email *</span>
+                                                <span class="lang-ar hidden-language">البريد الإلكتروني *</span>
+                                            </label>
+                                            <input type="email" id="email" name="email" required class="form-input" placeholder="example@email.com">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">
+                                            <span class="lang-en">Phone Number *</span>
+                                            <span class="lang-ar hidden-language">رقم الهاتف *</span>
+                                        </label>
+                                        <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+971 50 000 0000">
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">
+                                            <span class="lang-en">Service Interested In *</span>
+                                            <span class="lang-ar hidden-language">الخدمة المهتم بها *</span>
+                                        </label>
+                                        <select id="service" name="service" required class="form-input">
+                                            <option value="">
+                                                <span class="lang-en">Select a service</span>
+                                                <span class="lang-ar hidden-language">اختر خدمة</span>
+                                            </option>
+                                            <option value="vat">
+                                                <span class="lang-en">VAT Services</span>
+                                                <span class="lang-ar hidden-language">خدمات ضريبة القيمة المضافة</span>
+                                            </option>
+                                            <option value="corporate">
+                                                <span class="lang-en">Corporate Tax</span>
+                                                <span class="lang-ar hidden-language">ضريبة الشركات</span>
+                                            </option>
+                                            <option value="accounting">
+                                                <span class="lang-en">Accounting & Bookkeeping</span>
+                                                <span class="lang-ar hidden-language">المحاسبة ومسك الدفاتر</span>
+                                            </option>
+                                            <option value="business">
+                                                <span class="lang-en">Business Consultancy</span>
+                                                <span class="lang-ar hidden-language">الاستشارات التجارية</span>
+                                            </option>
+                                            <option value="erp">
+                                                <span class="lang-en">ERP & Accounting Systems</span>
+                                                <span class="lang-ar hidden-language">أنظمة ERP والمحاسبة</span>
+                                            </option>
+                                            <option value="other">
+                                                <span class="lang-en">Other Services</span>
+                                                <span class="lang-ar hidden-language">خدمات أخرى</span>
+                                            </option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Communication Method Selection -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-4">
+                                            <span class="lang-en">Preferred Contact Method *</span>
+                                            <span class="lang-ar hidden-language">طريقة التواصل المفضلة *</span>
+                                        </label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <!-- Email Method -->
+                                            <div class="method-card email-card" onclick="selectMethod('email')">
+                                                <input type="radio" id="method-email" name="contact_method" value="email" checked class="hidden">
+                                                <div class="method-icon email-icon">
+                                                    <i data-lucide="mail" class="text-white w-5 h-5"></i>
+                                                </div>
+                                                <h4 class="font-semibold text-lg mb-2">
+                                                    <span class="lang-en">Email</span>
+                                                    <span class="lang-ar hidden-language">بريد إلكتروني</span>
+                                                </h4>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                    <span class="lang-en">We'll reply within 24 hours</span>
+                                                    <span class="lang-ar hidden-language">سنرد خلال 24 ساعة</span>
+                                                </p>
+                                            </div>
+                                            
+                                            <!-- WhatsApp Method -->
+                                            <div class="method-card whatsapp-card" onclick="selectMethod('whatsapp')">
+                                                <input type="radio" id="method-whatsapp" name="contact_method" value="whatsapp" class="hidden">
+                                                <div class="method-icon whatsapp-icon">
+                                                    <i data-lucide="message-circle" class="text-white w-5 h-5"></i>
+                                                </div>
+                                                <h4 class="font-semibold text-lg mb-2">
+                                                    <span class="lang-en">WhatsApp</span>
+                                                    <span class="lang-ar hidden-language">واتساب</span>
+                                                </h4>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                                    <span class="lang-en">Instant reply via WhatsApp</span>
+                                                    <span class="lang-ar hidden-language">رد فوري عبر واتساب</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">
+                                            <span class="lang-en">Message *</span>
+                                            <span class="lang-ar hidden-language">الرسالة *</span>
+                                        </label>
+                                        <textarea id="message" name="message" required class="form-input form-textarea" 
+                                                  placeholder='<span class="lang-en">Write your message here...</span><span class="lang-ar hidden-language">اكتب رسالتك هنا...</span>'></textarea>
+                                    </div>
+                                    
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="consent" required class="w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2">
+                                        <label for="consent" class="text-sm text-gray-600 dark:text-gray-400">
+                                            <span class="lang-en">I agree to receive communications from CloudBooks</span>
+                                            <span class="lang-ar hidden-language">أوافق على استلام الاتصالات من CloudBooks</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <button type="submit" id="submit-btn" class="btn-primary py-3 text-lg relative">
+                                            <span id="submit-text" class="lang-en">Send Message</span>
+                                            <span id="submit-text-ar" class="lang-ar hidden-language">إرسال الرسالة</span>
+                                            <div id="form-loader" class="form-loader absolute left-4 rtl:left-auto rtl:right-4" style="display: none;"></div>
+                                            <i data-lucide="send" class="w-5 h-5 inline-block mr-2 rtl:mr-0 rtl:ml-2" id="submit-icon"></i>
+                                        </button>
+                                        
+                                        <!-- WhatsApp Quick Button -->
+                                        <a href="https://wa.me/971502343297" target="_blank" id="whatsapp-quick-btn" class="btn-secondary py-3 text-lg flex items-center justify-center bg-green-600 hover:bg-green-700">
+                                            <i data-lucide="message-circle" class="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2"></i>
+                                            <span class="lang-en">WhatsApp Now</span>
+                                            <span class="lang-ar hidden-language">واتساب الآن</span>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Column -->
+                        <div>
+                            <div class="contact-card mb-8">
+                                <h3 class="text-2xl font-bold mb-6">
+                                    <span class="lang-en">Why Choose CloudBooks?</span>
+                                    <span class="lang-ar hidden-language">لماذا تختار CloudBooks؟</span>
+                                </h3>
+                                <ul class="space-y-4">
+                                    <li class="flex items-start">
+                                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 rtl:mr-0 rtl:ml-3 mt-1 flex-shrink-0"></i>
+                                        <span>
+                                            <span class="lang-en">Certified Tax Agents by Federal Tax Authority (FTA)</span>
+                                            <span class="lang-ar hidden-language">وكلاء ضريبيين معتمدين من الهيئة الاتحادية للضرائب (FTA)</span>
+                                        </span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 rtl:mr-0 rtl:ml-3 mt-1 flex-shrink-0"></i>
+                                        <span>
+                                            <span class="lang-en">Member of UAE Accountants Association</span>
+                                            <span class="lang-ar hidden-language">عضو في جمعية المحاسبين الإماراتية</span>
+                                        </span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 rtl:mr-0 rtl:ml-3 mt-1 flex-shrink-0"></i>
+                                        <span>
+                                            <span class="lang-en">10+ Years of Experience in UAE Market</span>
+                                            <span class="lang-ar hidden-language">أكثر من 10 سنوات خبرة في السوق الإماراتي</span>
+                                        </span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 rtl:mr-0 rtl:ml-3 mt-1 flex-shrink-0"></i>
+                                        <span>
+                                            <span class="lang-en">24/7 Customer Support</span>
+                                            <span class="lang-ar hidden-language">دعم العملاء على مدار الساعة</span>
+                                        </span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 rtl:mr-0 rtl:ml-3 mt-1 flex-shrink-0"></i>
+                                        <span>
+                                            <span class="lang-en">Free Initial Consultation</span>
+                                            <span class="lang-ar hidden-language">استشارة أولية مجانية</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <h3 class="text-2xl font-bold mb-6">
+                                    <span class="lang-en">Business Hours</span>
+                                    <span class="lang-ar hidden-language">ساعات العمل</span>
+                                </h3>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center pb-3 border-b border-gray-200 dark:border-gray-700">
+                                        <span class="lang-en">Monday - Thursday</span>
+                                        <span class="lang-ar hidden-language">الاثنين - الخميس</span>
+                                        <span class="font-semibold">9:00 AM - 8:00 PM</span>
+                                    </div>
+                                    
+                                    <div class="flex justify-between items-center">
+                                        <span class="lang-en">Friday - Sunday</span>
+                                        <span class="lang-ar hidden-language">الجمعة - الأحد</span>
+                                        <span class="font-semibold">Closed</span>
+                                    </div>
+                                </div>
+                                <div class="mt-6 p-4 bg-blue-50 rounded-lg dark:bg-blue-900/20">
+                                    <p class="text-sm text-blue-800 dark:text-blue-300">
+                                        <i data-lucide="info" class="w-4 h-4 inline-block mr-2 rtl:mr-0 rtl:ml-2"></i>
+                                        <span class="lang-en">Urgent inquiries available 24/7 via phone or WhatsApp</span>
+                                        <span class="lang-ar hidden-language">الاستفسارات العاجلة متاحة 24/7 عبر الهاتف أو واتساب</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="pb-16">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        <span class="lang-en">Visit Our Office</span>
+                        <span class="lang-ar hidden-language">زيارة مكتبنا</span>
+                    </h2>
+                </div>
+              
+                <div class="map-container w-full rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5632.678082841068!2d55.33721017531818!3d25.260339684702686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cdd95092d31%3A0x8a1787b71c446595!2zQWwgS2hhaW1haCBCdWlsZGluZyAtINio2YjYsSDYs9i52YrYryAtINiv2YrYsdipIC0g2K_YqNmKIC0g2KfZhNil2YXYp9ix2KfYqiDYp9mE2LnYsdio2YrYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1764669689321!5m2!1sar!2seg" 
+                        class="w-full h-64 sm:h-80 md:h-96 lg:h-[450px]"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="CloudBooks Location - Al Khaima Building, Dubai"
+                        aria-label="Map showing CloudBooks location in Al Khaima Building, Dubai">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="images/logo1_compressed.webp" alt="CloudBooks Logo" class="w-12 h-12 rounded-lg">
+                        <div>
+                            <div class="text-xl font-bold text-white">CloudBooks</div>
+                            <div class="text-gray-400 text-sm">Certified Tax Agency</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        <span class="lang-en">Your trusted partner for tax and accounting services in Dubai</span>
+                        <span class="lang-ar hidden-language">شريكك الموثوق لخدمات الضرائب والمحاسبة في دبي</span>
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-semibold mb-6">
+                        <span class="lang-en">Quick Links</span>
+                        <span class="lang-ar hidden-language">روابط سريعة</span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">Home</span>
+                            <span class="lang-ar hidden-language">الرئيسية</span>
+                        </a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">Services</span>
+                            <span class="lang-ar hidden-language">الخدمات</span>
+                        </a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">About Us</span>
+                            <span class="lang-ar hidden-language">من نحن</span>
+                        </a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">Contact</span>
+                            <span class="lang-ar hidden-language">اتصل بنا</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-semibold mb-6">
+                        <span class="lang-en">Services</span>
+                        <span class="lang-ar hidden-language">الخدمات</span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html#vat" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">VAT Services</span>
+                            <span class="lang-ar hidden-language">خدمات ضريبة القيمة المضافة</span>
+                        </a></li>
+                        <li><a href="index.html#corporate-tax" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">Corporate Tax</span>
+                            <span class="lang-ar hidden-language">ضريبة الشركات</span>
+                        </a></li>
+                        <li><a href="index.html#accounting" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">Accounting</span>
+                            <span class="lang-ar hidden-language">المحاسبة</span>
+                        </a></li>
+                        <li><a href="index.html#business" class="text-gray-400 hover:text-white transition">
+                            <span class="lang-en">Business Setup</span>
+                            <span class="lang-ar hidden-language">تأسيس الأعمال</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-semibold mb-6">
+                        <span class="lang-en">Connect With Us</span>
+                        <span class="lang-ar hidden-language">تواصل معنا</span>
+                    </h3>
+                    <div class="flex space-x-3 mb-6">
+                        <a href="https://www.facebook.com/share/1CcbFJNEVM/" target="_blank" class="social-icon bg-gray-800 hover:bg-blue-600">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cloudbooks.accounting_taxagent?igsh=cnhvenB4a21vYmht" target="_blank" class="social-icon bg-gray-800 hover:bg-pink-600">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/the-accountantfirm/" target="_blank" class="social-icon bg-gray-800 hover:bg-blue-700">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://wa.me/971502343297" target="_blank" class="social-icon bg-gray-800 hover:bg-green-500">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="text-gray-400 text-sm">
+                        <span class="lang-en">Certified by FTA & UAE Accountants Association</span>
+                        <span class="lang-ar hidden-language">معتمد من الهيئة الاتحادية للضرائب وجمعية المحاسبين الإماراتية</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 CloudBooks. 
+                    <span class="lang-en">All rights reserved.</span>
+                    <span class="lang-ar hidden-language">جميع الحقوق محفوظة.</span>
+                </p>
+                <div class="flex justify-center space-x-6 mt-4 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition">
+                        <span class="lang-en">Privacy Policy</span>
+                        <span class="lang-ar hidden-language">سياسة الخصوصية</span>
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-white transition">
+                        <span class="lang-en">Terms of Service</span>
+                        <span class="lang-ar hidden-language">شروط الخدمة</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- الأيقونات الثابتة في الشمال -->
+<div id="social-icons-container">
+    
+    <!-- WhatsApp -->
+    <a href="https://wa.me/971502343297" 
+       target="_blank"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #25D366, #128C7E);">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 fill-white">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+971502343297"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+        <i data-lucide="phone" class="w-4 h-4 text-white"></i>
+        <span>Call Now</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info@cloudbooksae.com"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+        <i data-lucide="mail" class="w-4 h-4 text-white"></i>
+        <span>Email</span>
+    </a>
+
+    <!-- Location -->
+    <a href="https://maps.app.goo.gl/JPLFkwmLiePfUD7n9?g_st=awb"
+       target="_blank"
+       class="social-icon-item"
+       style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+        <i data-lucide="map-pin" class="w-4 h-4 text-white"></i>
+        <span>Location</span>
+    </a>
+
+    <!-- Toggle Button -->
+    <button id="toggle-icons-btn" class="social-icon-item">
+        <i data-lucide="eye" id="toggle-icon" class="w-4 h-4 text-white"></i>
+        <span>Hide</span>
+    </button>
+
+</div>
+
+    <!-- JavaScript -->
+    <script>
+
+// JavaScript للأيقونات الثابتة في الشمال
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('social-icons-container');
+    const toggleBtn = document.getElementById('toggle-icons-btn');
+    const toggleIcon = document.getElementById('toggle-icon');
+    const toggleSpan = toggleBtn.querySelector('span');
+    
+    if (!container || !toggleBtn || !toggleIcon) return;
+    
+    let iconsVisible = true;
+    
+    // دالة تبديل الإخفاء/الإظهار
+    function toggleIcons() {
+        if (iconsVisible) {
+            // إخفاء الأيقونات
+            container.classList.add('hide-icons');
+            toggleIcon.setAttribute('data-lucide', 'eye-off');
+            toggleSpan.textContent = 'Show';
+        } else {
+            // إظهار الأيقونات
+            container.classList.remove('hide-icons');
+            toggleIcon.setAttribute('data-lucide', 'eye');
+            toggleSpan.textContent = 'Hide';
+        }
+        
+        // تبديل الحالة
+        iconsVisible = !iconsVisible;
+        
+        // تحديث الأيقونات
+        lucide.createIcons();
+    }
+    
+    // إضافة حدث النقر
+    toggleBtn.addEventListener('click', toggleIcons);
+    
+    // تحديث الأيقونات عند تحميل الصفحة
+    lucide.createIcons();
+    
+    // التأكد من بقاء الأيقونات في الشمال حتى مع اللغة العربية
+    // لا نغير موضع الأيقونات عند تغيير اللغة
+    if (typeof toggleLanguage === 'function') {
+        const originalToggleLanguage = toggleLanguage;
+        window.toggleLanguage = function(lang) {
+            originalToggleLanguage(lang);
+            // الحفاظ على الأيقونات في الشمال
+            setTimeout(() => {
+                lucide.createIcons();
+                // التأكد من أن الأيقونات تبقى في الشمال
+                if (lang === 'ar') {
+                    container.style.left = '10px';
+                    container.style.right = 'auto';
+                } else {
+                    container.style.left = '10px';
+                    container.style.right = 'auto';
+                }
+            }, 50);
+        };
+    }
+}); 
+
+
+// Initialize EmailJS
+        emailjs.init("y79gGBTZkF0zcrbsx");
+
+        // Global variables
+        let currentLanguage = 'en';
+        let currentTheme = 'light';
+
+        // Load preferences from localStorage
+        function loadPreferences() {
+            const savedLanguage = localStorage.getItem('cloudbooks-language');
+            const savedTheme = localStorage.getItem('cloudbooks-theme');
+            
+            if (savedLanguage) {
+                currentLanguage = savedLanguage;
+                setLanguage(savedLanguage, true);
+            }
+            
+            if (savedTheme) {
+                currentTheme = savedTheme;
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        }
+
+        // Save preferences to localStorage
+        function savePreferences() {
+            localStorage.setItem('cloudbooks-language', currentLanguage);
+            localStorage.setItem('cloudbooks-theme', currentTheme);
+        }
+
+        // Update placeholder text based on language
+        function updatePlaceholders(language) {
+            const nameInput = document.getElementById('name');
+            const messageTextarea = document.getElementById('message');
+            
+            if (language === 'ar') {
+                nameInput.placeholder = 'أدخل اسمك الكامل';
+                messageTextarea.placeholder = 'اكتب رسالتك هنا...';
+            } else {
+                nameInput.placeholder = 'Enter your full name';
+                messageTextarea.placeholder = 'Write your message here...';
+            }
+        }
+
+        // Set language function
+        function setLanguage(lang, initialLoad = false) {
+            currentLanguage = lang;
+            
+            // Update direction
+            if (lang === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+                document.body.classList.add('rtl');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', 'en');
+                document.body.classList.remove('rtl');
+            }
+            
+            // Show/hide language content
+            document.querySelectorAll('.lang-en').forEach(el => {
+                el.classList.toggle('hidden-language', lang !== 'en');
+            });
+            
+            document.querySelectorAll('.lang-ar').forEach(el => {
+                el.classList.toggle('hidden-language', lang !== 'ar');
+            });
+            
+            // Update placeholders
+            updatePlaceholders(lang);
+            
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('text-gray-700', 'hover:bg-gray-200');
+            });
+            
+            if (lang === 'en') {
+                document.getElementById('lang-en-btn').classList.add('bg-blue-600', 'text-white');
+                document.getElementById('lang-en-btn').classList.remove('text-gray-700', 'hover:bg-gray-200');
+                document.getElementById('lang-toggle-mobile').innerHTML = '<span class="lang-en">عربي</span><span class="lang-ar hidden-language">EN</span>';
+            } else {
+                document.getElementById('lang-ar-btn').classList.add('bg-blue-600', 'text-white');
+                document.getElementById('lang-ar-btn').classList.remove('text-gray-700', 'hover:bg-gray-200');
+                document.getElementById('lang-toggle-mobile').innerHTML = '<span class="lang-en">عربي</span><span class="lang-ar hidden-language">EN</span>';
+            }
+            
+            // Update mobile menu button text
+            updateMobileMenuText();
+            
+            // Save preferences (only if not initial load)
+            if (!initialLoad) {
+                savePreferences();
+            }
+            
+            // Reinitialize icons
+            lucide.createIcons();
+        }
+
+        // Update mobile menu text
+        function updateMobileMenuText() {
+            const langToggle = document.getElementById('lang-toggle-mobile');
+            if (currentLanguage === 'en') {
+                langToggle.innerHTML = '<span class="lang-en">عربي</span><span class="lang-ar hidden-language">EN</span>';
+            } else {
+                langToggle.innerHTML = '<span class="lang-en">عربي</span><span class="lang-ar hidden-language">EN</span>';
+            }
+        }
+
+        // Toggle language function for mobile
+        function toggleLanguage() {
+            const newLang = currentLanguage === 'en' ? 'ar' : 'en';
+            setLanguage(newLang);
+        }
+
+        // Select contact method
+        function selectMethod(method) {
+            const emailCard = document.querySelector('.email-card');
+            const whatsappCard = document.querySelector('.whatsapp-card');
+            const emailRadio = document.getElementById('method-email');
+            const whatsappRadio = document.getElementById('method-whatsapp');
+            
+            if (method === 'email') {
+                emailCard.classList.add('selected');
+                whatsappCard.classList.remove('selected');
+                emailRadio.checked = true;
+                whatsappRadio.checked = false;
+            } else {
+                whatsappCard.classList.add('selected');
+                emailCard.classList.remove('selected');
+                whatsappRadio.checked = true;
+                emailRadio.checked = false;
+            }
+        }
+
+        // Toggle theme function
+        function toggleTheme() {
+            if (document.body.classList.contains('dark-theme')) {
+                document.body.classList.remove('dark-theme');
+                currentTheme = 'light';
+            } else {
+                document.body.classList.add('dark-theme');
+                currentTheme = 'dark';
+            }
+            savePreferences();
+            lucide.createIcons();
+        }
+
+        // Mobile menu functions
+        function openMobileMenu() {
+            document.getElementById('mobile-menu').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('mobile-menu').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Helper function to get service name
+        function getServiceName(serviceValue) {
+            const services = {
+                'vat': 'VAT Services',
+                'corporate': 'Corporate Tax',
+                'accounting': 'Accounting & Bookkeeping',
+                'business': 'Business Consultancy',
+                'erp': 'ERP & Accounting Systems',
+                'other': 'Other Services'
+            };
+            
+            const arabicServices = {
+                'vat': 'خدمات ضريبة القيمة المضافة',
+                'corporate': 'ضريبة الشركات',
+                'accounting': 'المحاسبة ومسك الدفاتر',
+                'business': 'الاستشارات التجارية',
+                'erp': 'أنظمة ERP والمحاسبة',
+                'other': 'خدمات أخرى'
+            };
+            
+            if (currentLanguage === 'ar') {
+                return arabicServices[serviceValue] || serviceValue;
+            }
+            return services[serviceValue] || serviceValue;
+        }
+
+        // ========== START OF ADDED CODE ==========
+
+        // Complete updated form submission handler:
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Hide all messages
+            document.getElementById('success-message').style.display = 'none';
+            document.getElementById('whatsapp-success-message').style.display = 'none';
+            document.getElementById('error-message').style.display = 'none';
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const contactMethod = formData.get('contact_method');
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const service = formData.get('service');
+            const message = formData.get('message');
+            
+            // Validate all required fields
+            if (!name || !email || !phone || !service || !message) {
+                document.getElementById('error-message').style.display = 'block';
+                document.getElementById('error-text').textContent = 'Please fill all required fields';
+                document.getElementById('error-text-ar').textContent = 'يرجى ملء جميع الحقول المطلوبة';
+                return;
+            }
+            
+            // Show loading
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            const formLoader = document.getElementById('form-loader');
+            const submitIcon = document.getElementById('submit-icon');
+            
+            submitIcon.style.display = 'none';
+            formLoader.style.display = 'block';
+            submitBtn.disabled = true;
+            
+            if (contactMethod === 'whatsapp') {
+                // Handle WhatsApp submission
+                handleWhatsAppSubmission(name, email, phone, service, message, submitBtn, originalText);
+            } else {
+                // Handle Email submission
+                handleEmailSubmission(name, email, phone, service, message, submitBtn, originalText);
+            }
+        });
+
+        // WhatsApp submission function
+        function handleWhatsAppSubmission(name, email, phone, service, message, submitBtn, originalText) {
+            submitBtn.innerHTML = '<span class="lang-en">Preparing WhatsApp...</span><span class="lang-ar hidden-language">جاري تحضير واتساب...</span>';
+            
+            // Format message for WhatsApp
+            const whatsappMessage = `*New Contact Request from CloudBooks Website*%0A%0A` +
+                                `*Name:* ${name}%0A` +
+                                `*Email:* ${email}%0A` +
+                                `*Phone:* ${phone}%0A` +
+                                `*Service:* ${getServiceName(service)}%0A` +
+                                `*Message:* ${message}%0A%0A` +
+                                `_This message was sent via CloudBooks Contact Form_`;
+            
+            // Also send email notification
+            sendEmailNotification(name, email, phone, service, message, 'WhatsApp');
+            
+            // Show success message
+            document.getElementById('whatsapp-success-message').style.display = 'block';
+            
+            // Reset button after short delay
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                document.getElementById('submit-icon').style.display = 'inline-block';
+                document.getElementById('form-loader').style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Open WhatsApp in new tab
+                window.open(`https://wa.me/971502343297?text=${whatsappMessage}`, '_blank');
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                selectMethod('email');
+                
+                // Hide message after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('whatsapp-success-message').style.display = 'none';
+                }, 3000);
+            }, 1500);
+        }
+
+        // Email submission function
+        async function handleEmailSubmission(name, email, phone, service, message, submitBtn, originalText) {
+            submitBtn.innerHTML = '<span class="lang-en">Sending...</span><span class="lang-ar hidden-language">جاري الإرسال...</span>';
+            
+            try {
+                // Send email via EmailJS
+                const response = await emailjs.send(
+                    'service_o0ejvz9',
+                    'Cloud_Books12',
+                    {
+                        from_name: name,
+                        from_email: email,
+                        phone_number: phone,
+                        service: getServiceName(service),
+                        message: message,
+                        contact_method: 'Email',
+                        date: new Date().toLocaleString(),
+                        website: 'CloudBooks Contact Form',
+                        subject: `New Contact Request from ${name}`
+                    }
+                );
+                
+                console.log('SUCCESS!', response.status, response.text);
+                
+                // Show success message
+                document.getElementById('success-message').style.display = 'block';
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                selectMethod('email');
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                document.getElementById('submit-icon').style.display = 'inline-block';
+                document.getElementById('form-loader').style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('success-message').style.display = 'none';
+                }, 5000);
+                
+            } catch (error) {
+                console.log('FAILED...', error);
+                
+                // Try alternative email method
+                sendEmailAlternative(name, email, phone, service, message, submitBtn, originalText);
+            }
+        }
+
+        // Alternative email sending function
+        function sendEmailAlternative(name, email, phone, service, message, submitBtn, originalText) {
+            // Prepare email content
+            const emailContent = `
+                New Contact Request from CloudBooks Website:
+                
+                Name: ${name}
+                Email: ${email}
+                Phone: ${phone}
+                Service Interested In: ${getServiceName(service)}
+                Message: ${message}
+                
+                Contact Method: Email
+                Date: ${new Date().toLocaleString()}
+                Website: CloudBooks Contact Form
+            `;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:info@cloudbooksae.com?subject=New Contact Request from ${name}&body=${encodeURIComponent(emailContent)}`;
+            
+            // Fallback to mailto
+            window.location.href = mailtoLink;
+            
+            // Show success message anyway
+            document.getElementById('success-message').style.display = 'block';
+            
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            document.getElementById('submit-icon').style.display = 'inline-block';
+            document.getElementById('form-loader').style.display = 'none';
+            submitBtn.disabled = false;
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+            selectMethod('email');
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('success-message').style.display = 'none';
+            }, 5000);
+        }
+
+        // Send email notification for WhatsApp submissions
+        function sendEmailNotification(name, email, phone, service, message, contactMethod) {
+            // Prepare email content for notification
+            const notificationContent = {
+                from_name: name,
+                from_email: email,
+                phone_number: phone,
+                service: getServiceName(service),
+                message: message,
+                contact_method: contactMethod,
+                date: new Date().toLocaleString(),
+                website: 'CloudBooks Contact Form',
+                subject: `New WhatsApp Contact Request from ${name}`
+            };
+            
+            // Send notification email silently (don't wait for response)
+            emailjs.send('service_o0ejvz9', 'Cloud_Books12', notificationContent)
+                .then(response => console.log('Notification sent:', response.status))
+                .catch(error => console.log('Notification failed:', error));
+        }
+
+        // ========== END OF ADDED CODE ==========
+
+        // Update the quick WhatsApp button to include form data
+        document.getElementById('whatsapp-quick-btn').addEventListener('click', function(e) {
+            // Prevent default if form is filled
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            if (name || email || phone || message) {
+                e.preventDefault();
+                
+                // Format message for WhatsApp
+                let whatsappMessage = `*New Contact Request from CloudBooks Website*%0A%0A`;
+                
+                if (name) whatsappMessage += `*Name:* ${name}%0A`;
+                if (email) whatsappMessage += `*Email:* ${email}%0A`;
+                if (phone) whatsappMessage += `*Phone:* ${phone}%0A`;
+                if (service) whatsappMessage += `*Service:* ${getServiceName(service)}%0A`;
+                if (message) whatsappMessage += `*Message:* ${message}%0A`;
+                
+                whatsappMessage += `%0A_This message was sent via CloudBooks Contact Form_`;
+                
+                // Open WhatsApp with pre-filled message
+                window.open(`https://wa.me/971502343297?text=${whatsappMessage}`, '_blank');
+            }
+        });
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load preferences
+            loadPreferences();
+            
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                once: true,
+            });
+            
+            // Initialize icons
+            lucide.createIcons();
+            
+            // Initialize contact method selection
+            selectMethod('email');
+            
+            // Event listeners
+            document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+            document.getElementById('theme-toggle-mobile').addEventListener('click', toggleTheme);
+            document.getElementById('mobile-menu-btn').addEventListener('click', openMobileMenu);
+            document.getElementById('lang-toggle-mobile').addEventListener('click', toggleLanguage);
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                if (mobileMenu.classList.contains('active') && 
+                    !mobileMenu.contains(e.target) && 
+                    !mobileMenuBtn.contains(e.target)) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // Close mobile menu with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeMobileMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
